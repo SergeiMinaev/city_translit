@@ -36,7 +36,7 @@ DATA = {
        'kozhevnikovo':'кожевниково',
        'klin':'клин',
        'klimovsk':'климовск',
-       'krasnodar':'краснодар'.
+       'krasnodar':'краснодар',
     },
     'l': {
         'leninsk_kuznetsky':'ленинск-кузнецкий',
