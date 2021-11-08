@@ -1,12 +1,13 @@
 import re
 
-CITY_RE = re.compile('[^a-zA-Z]')
+CITY_RE = re.compile('[^a-zA-Z- ]')
 DATA = {
     'a': {
        'anzherosudzhensk':'анжеро-судженск',
     },
     'b': {
        'bronnitsy':'бронницы',
+       'biysk':'бийск',
     },
     'c': {
     },
@@ -35,8 +36,10 @@ DATA = {
        'kozhevnikovo':'кожевниково',
        'klin':'клин',
        'klimovsk':'климовск',
+       'krasnodar':'краснодар'.
     },
     'l': {
+        'leninsk_kuznetsky':'ленинск-кузнецкий',
     },
     'm': {
        'moscow':'москва',
@@ -51,6 +54,7 @@ DATA = {
     'p': {
        'podolsk':'подольск',
        'plavsk':'плавск',
+       'prokopyevsk':'прокопьевск',
     },
     'q': {
     },
@@ -58,10 +62,12 @@ DATA = {
        'ramenskoye':'раменское',
     },
     's': {
-       'stpetersburg':'санкт-петербург',
+       'st_petersburg':'санкт-петербург',
+       'staraya yurga':'старая юрга',
     },
     't': {
        'tayga':'тайга',
+       'tula':'тула',
     },
     'v': {
        'volgograd':'волгоград',
@@ -82,4 +88,5 @@ DATA = {
 
 def get_city_ru(name_en: str) -> str:
     name_en = CITY_RE.sub('', name_en.lower())
+    name_en = name_en.replace('-', '_').replace(' ','_')
     return DATA[name_en[0]].get(name_en, None)
