@@ -4,16 +4,19 @@ CITY_RE = re.compile('[^a-zA-Z- ]')
 DATA = {
     'a': {
        'anzherosudzhensk':'анжеро-судженск',
+       'ashukino':'ашукино',
     },
     'b': {
        'bronnitsy':'бронницы',
        'biysk':'бийск',
     },
     'c': {
+        'chelyabinsk':'челябинск',
     },
     'd': {
     },
     'e': {
+        'elektrostal':'электросталь',
     },
     'f': {
     },
@@ -33,6 +36,7 @@ DATA = {
        'krasnoarmeysk':'красноармейск',
        'korolyov':'королев',
        'kashira':'кашира',
+       'kazan':'казань',
        'kozhevnikovo':'кожевниково',
        'klin':'клин',
        'klimovsk':'климовск',
@@ -47,9 +51,11 @@ DATA = {
     },
     'n': {
        'novoaltaysk':'новоалтайск',
+       'nizhniy_novgorod':'нижний новгород',
     },
     'o': {
        'oktyabrsky':'октябрьский',
+       'orenburg':'оренбург',
     },
     'p': {
        'podolsk':'подольск',
@@ -64,6 +70,7 @@ DATA = {
     's': {
        'st_petersburg':'санкт-петербург',
        'staraya yurga':'старая юрга',
+       'sverdlovskiy':'свердловский',
     },
     't': {
        'tayga':'тайга',
@@ -80,6 +87,7 @@ DATA = {
     },
     'y': {
        'yaroslavl':'ярославль',
+       'yekaterinburg':'екатеринбург',
     },
     'z': {
        'zhukovskiy':'жуковский',
