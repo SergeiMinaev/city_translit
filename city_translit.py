@@ -80,6 +80,6 @@ DATA = {
     },
 }
 
-def city_ru(name_en: str) -> str:
+def get_city_ru(name_en: str) -> str:
     name_en = CITY_RE.sub('', name_en.lower())
     return DATA[name_en[0]].get(name_en, None)
